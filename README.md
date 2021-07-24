@@ -18,5 +18,5 @@
 
 <p>We suggest that you begin by typing:</p>
 
-  <code>cd wastiauxwilliam_11_24-07-2021
-  yarn start</code>
+  <code>cd wastiauxwilliam_11_24-07-2021</code>
+  <code>yarn start</code>
