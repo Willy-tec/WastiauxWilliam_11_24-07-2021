@@ -9,7 +9,7 @@
   <code>yarn build</code>
     <p>Bundles the app into static files for production.</p>
 
-  <code></code>yarn test</code>
+  <code>yarn test</code>
     <p>Starts the test runner.</p>
 
   <code>yarn eject</code>
