@@ -1,0 +1,36 @@
+.hero {
+  margin: 0 100px 0 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  height: 223px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.hero_text {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 48px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=style.css.map */

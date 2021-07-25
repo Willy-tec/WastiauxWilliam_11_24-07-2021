@@ -1,0 +1,22 @@
+li {
+  list-style: none;
+}
+
+.Thumbs_list {
+  display: -ms-grid;
+  display: grid;
+  margin: 43px 100px 43px 100px;
+  padding: 50px;
+  border-radius: 10px;
+  width: auto;
+  -ms-grid-columns: (340px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 340px);
+  -ms-grid-rows: (340px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 340px);
+  gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F6F6F6;
+}
+/*# sourceMappingURL=style.css.map */
