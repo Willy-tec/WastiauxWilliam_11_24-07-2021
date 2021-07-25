@@ -4,8 +4,6 @@ import './index.css';
 //import App from './component/app/App';
 import Header from './component/Header'
 import Footer from './component/Footer';
-import App from './component/app/App';
-import Hero from './component/Hero';
 import {
   BrowserRouter as Router,
   Switch,
