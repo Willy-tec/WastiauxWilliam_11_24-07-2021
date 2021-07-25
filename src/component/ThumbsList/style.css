@@ -7,7 +7,7 @@ li {
   display: grid;
   margin: 43px 100px 43px 100px;
   padding: 50px;
-  border-radius: 10px;
+  border-radius: 25px;
   width: auto;
   -ms-grid-columns: (340px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 340px);
@@ -17,6 +17,6 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F6F6F6;
+  background-color: #F7F7F7;
 }
 /*# sourceMappingURL=style.css.map */
