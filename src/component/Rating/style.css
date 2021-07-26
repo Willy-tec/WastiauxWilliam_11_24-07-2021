@@ -1,0 +1,9 @@
+.rating {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 24px;
+  -ms-grid-columns: (30px)[5];
+      grid-template-columns: repeat(5, 30px);
+  gap: 10px;
+}
+/*# sourceMappingURL=style.css.map */

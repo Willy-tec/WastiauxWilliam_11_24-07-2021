@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import './style.css'
+import LOGO_footer from "./LOGO_footer.svg";
 
 class Footer extends Component
 {
@@ -8,7 +9,7 @@ class Footer extends Component
         return (
         
             <div className="footer">
-                <img src="./LOGO_footer.svg" alt="Logo de KASA"/>
+                <img src={LOGO_footer} alt="Logo de KASA"/>
                 <p>© 2020 Kasa. All rights reserved</p>
             </div>
     )}

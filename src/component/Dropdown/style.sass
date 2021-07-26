@@ -1,0 +1,34 @@
+.dropdown
+    font-size: 24px
+    margin: 20px
+    background-color: #F6F6F6
+    border-radius: 5px
+    overflow: hidden
+    width: 100%
+    height: 100%
+    
+    &_title
+        z-index: 2
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: calc(100% - 50px)
+        color: white
+        background-color: #FF6060
+        padding: 10px 30px 10px 20px
+        line-height: 30px
+        border-radius: 5px
+        & h2
+            font-size: 24px
+            font-weight: normal
+    &_cursor
+        transition: transform 250ms ease
+        transform: rotateX(-180deg)
+    &_body
+        color: #FF6060
+        z-index: 1
+        transition: max-height 750ms ease
+        &_child
+            padding: 10px 30px 10px 20px
+        

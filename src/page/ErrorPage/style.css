@@ -6,14 +6,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #FF6060;
-  padding: 174px 0 0 0;
+  min-height: calc(100vh - 336px);
 }
 
 .Error_page_quatreCent {
@@ -23,12 +22,10 @@
 
 .Error_page_introuvable {
   font-size: 36px;
-  padding: 66px 0 182px 0;
 }
 
 .Error_page_link {
   font-size: 18px;
   color: #FF6060;
-  padding-bottom: 159px;
 }
 /*# sourceMappingURL=style.css.map */

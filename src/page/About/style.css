@@ -1,7 +1,4 @@
-.footer {
-  width: 100%;
-  background-color: black;
-  color: white;
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,19 +6,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 24px;
-  padding-top: 66px;
-  padding-bottom: 30px;
-  justify-self: flex-end;
-}
-
-.footer img {
-  width: 122px;
+  width: 70%;
+  gap: 10px;
+  padding: 10px 0;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
