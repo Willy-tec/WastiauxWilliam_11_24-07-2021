@@ -6,7 +6,6 @@ class Host extends Component
 {
     render()
     {
-        console.log(this.props.host)
         return (
         
             <div className="host">
