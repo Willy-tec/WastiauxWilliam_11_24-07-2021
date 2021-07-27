@@ -1,5 +1,5 @@
 .Thumbs {
-  width: calc(100vmin - 40px);
+  width: calc(100vw - 40px);
   height: 255px;
   position: relative;
   overflow: hidden;
@@ -36,7 +36,7 @@
 
 @media (min-width: 520px) {
   .Thumbs {
-    width: calc(100vmin - 100px);
+    width: calc(100vw - 100px);
   }
 }
 
