@@ -1,5 +1,15 @@
 .rating
     display: grid
-    margin-top: 24px
-    grid-template-columns: repeat(5, 30px)
-    gap: 10px
+    margin-top: 0
+    grid-template-columns: repeat(5, 15px)
+    gap: 5px
+    & img
+        width: 15px
+
+@media (min-width: 650px)
+    .rating
+        margin-top: 24px
+        grid-template-columns: repeat(5, 30px)
+        gap: 10px
+        & img
+            width: unset

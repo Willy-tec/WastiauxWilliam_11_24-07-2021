@@ -1,8 +1,22 @@
 .fiche
-    width: calc(100% -200px)
-    margin: 0 100px 50px 100px
+    width: calc(100% - 40px)
+    margin: 0 20px 50px 20px
     &_dropdown_section
         display: flex
-        flex-direction: row
+        flex-direction: column
         gap: 10px
-        
+
+@media (min-width: 520px)
+    .fiche
+        width: calc(100% - 100px)
+        margin: 0 50px 50px 50px
+
+
+@media (min-width: 1024px)
+    .fiche
+        width: calc(100% - 200px)
+        margin: 0 100px 50px 100px
+        &_dropdown_section
+            display: flex
+            flex-direction: row
+            gap: 10px

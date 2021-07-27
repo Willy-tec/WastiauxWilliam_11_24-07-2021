@@ -1,16 +1,40 @@
 .fiche {
-  width: calc(100% -200px);
-  margin: 0 100px 50px 100px;
+  width: calc(100% - 40px);
+  margin: 0 20px 50px 20px;
 }
 
 .fiche_dropdown_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
+}
+
+@media (min-width: 520px) {
+  .fiche {
+    width: calc(100% - 100px);
+    margin: 0 50px 50px 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fiche {
+    width: calc(100% - 200px);
+    margin: 0 100px 50px 100px;
+  }
+  .fiche_dropdown_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,12 +5,16 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 30px 0 30px 0;
+  color: #FF6060;
 }
 
 .detaillogement_container_gauche {
-  width: 50%;
-  color: #FF6060;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,36 +25,65 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 14px;
 }
 
 .detaillogement_container_gauche h2 {
-  font-size: 36px;
+  font-size: 18px;
   font-weight: normal;
 }
 
 .detaillogement_container_droit {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
 }
 
 .tag_list {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
-  -ms-grid-columns: (125px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 125px);
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+@media (min-width: 650px) {
+  .tag_list {
+    margin-top: 20px;
+  }
+  .detaillogement {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .detaillogement_container_gauche {
+    font-size: 18px;
+  }
+  .detaillogement_container_gauche h2 {
+    font-size: 36px;
+  }
+  .detaillogement_container_droit {
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
