@@ -1,5 +1,6 @@
 .footer {
   width: 100%;
+  height: calc(209px - 62px - 62px);
   background-color: black;
   color: white;
   display: -webkit-box;
@@ -9,19 +10,33 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 24px;
-  padding-top: 66px;
-  padding-bottom: 30px;
+  font-size: 13px;
+  padding-top: 62px;
+  padding-bottom: 62px;
   justify-self: flex-end;
 }
 
 .footer img {
   width: 122px;
+}
+
+@media (min-width: 520px) {
+  .footer {
+    height: calc(209px - 62px - 32px);
+    font-size: 18px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
