@@ -1,34 +1,55 @@
+@import '../../foundation/var'
+
 .dropdown
-    font-size: 24px
-    margin: 20px
+    font-size: $font-link-s
     background-color: #F6F6F6
     border-radius: 5px
     overflow: hidden
     width: 100%
     height: 100%
-    
     &_title
         z-index: 2
         position: relative
         display: flex
         justify-content: space-between
         align-items: center
-        width: calc(100% - 50px)
+        width: calc(100% - 30px)
+        height: 10px
         color: white
-        background-color: #FF6060
+        background-color: $base-color
         padding: 10px 30px 10px 20px
         line-height: 30px
         border-radius: 5px
         & h2
-            font-size: 24px
+            font-size: $font-link-s
             font-weight: normal
     &_cursor
         transition: transform 250ms ease
         transform: rotateX(-180deg)
+        width: 12px
     &_body
-        color: #FF6060
+        color: $base-color
         z-index: 1
         transition: max-height 750ms ease
         &_child
             padding: 10px 30px 10px 20px
-        
+
+@media (min-width: 520px)
+    .dropdown
+        font-size: $font-link-m
+        &_title
+            width: calc(100% - 50px)
+            height: 27px
+            & h2
+                font-size: $font-link-m
+        &_cursor
+            width: 18px
+
+@media (min-width: 1024px)
+    .dropdown
+        font-size: $font-link-l
+        &_title
+            & h2
+                font-size: $font-link-l
+        &_cursor
+            width: unset

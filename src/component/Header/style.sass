@@ -1,17 +1,51 @@
+@import '../../foundation/var'
+    
 .navigation
-    width: calc(100% - 200px)
-    margin:  40px 100px 60px 100px
+    width: calc(100% - 40px)
+    margin:  20px auto 20px auto
     display: flex
     align-items: center
     justify-content: space-between
-    
+    & img
+        width: 145px
     &_link
         display: flex
         justify-content: right
+        flex-direction: column
+        gap: 10px
         & a
-            padding-left: 60px
-            color: #FF6060
-            font-size: 24px
+            text-transform: uppercase
+            padding-left: 10px
+            color: $base-color
+            font-size: $font-link-s
             text-decoration: none
             &:hover
                 text-decoration: underline
+
+@media (min-width : 350px)
+    .navigation
+        &_link
+            flex-direction: row
+
+@media (min-width : 520px)
+    .navigation
+        width: calc(100% - 100px)
+        margin:  40px auto 60px auto
+        & img
+            width: 178px
+        &_link
+            gap: 30px
+            & a
+                font-size: $font-link-m
+
+@media (min-width : 1024px)
+    .navigation
+        width: calc(100% - 200px)
+        max-width: 1240px
+        & img
+            width: 211px
+        &_link
+            gap: 50px
+            & a
+                font-size: $font-link-l
+    

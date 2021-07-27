@@ -1,9 +1,25 @@
 .rating {
   display: -ms-grid;
   display: grid;
-  margin-top: 24px;
-  -ms-grid-columns: (30px)[5];
-      grid-template-columns: repeat(5, 30px);
-  gap: 10px;
+  margin-top: 0;
+  -ms-grid-columns: (15px)[5];
+      grid-template-columns: repeat(5, 15px);
+  gap: 5px;
+}
+
+.rating img {
+  width: 15px;
+}
+
+@media (min-width: 650px) {
+  .rating {
+    margin-top: 24px;
+    -ms-grid-columns: (30px)[5];
+        grid-template-columns: repeat(5, 30px);
+    gap: 10px;
+  }
+  .rating img {
+    width: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */

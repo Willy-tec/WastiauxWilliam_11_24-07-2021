@@ -1,14 +1,26 @@
+@import '../../foundation/var'
 .footer
     width: 100%
+    height: calc(209px - 62px - 62px)
     background-color: black
     color: white
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: space-between
     align-items: center
-    font-size: 24px
-    padding-top: 66px
-    padding-bottom: 30px
+    font-size: $font-link-s
+    padding-top: 62px
+    padding-bottom: 62px
     justify-self: flex-end
     & img
         width: 122px
+
+@media (min-width: 520px)
+    .footer
+        height: calc(209px - 62px - 32px)
+        font-size: $font-link-m
+        padding-bottom: 32px
+
+@media (min-width: 1024px)
+    .footer
+        font-size: $font-link-l

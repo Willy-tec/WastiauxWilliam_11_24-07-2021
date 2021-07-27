@@ -1,15 +1,25 @@
+@import '../../foundation/var'
 .Error_page
     display: flex
     flex-direction: column
     justify-content: space-around
     align-items: center
-    color: #FF6060
+    text-align: center
+    color: $base-color
     min-height: calc(100vh - 336px)
     &_quatreCent
-        font-size: 288px
-        line-height: 288px
+        font-size: 96px
+        line-height: 136px
     &_introuvable
-        font-size: 36px
-    &_link
         font-size: 18px
-        color: #FF6060
+    &_link
+        font-size: 14px
+        color: $base-color
+@media (min-width: 1024px)
+    .Error_page
+        &_quatreCent
+            font-size: 288px
+        &_introuvable
+            font-size: 36px
+        &_link
+            font-size: 18px

@@ -1,17 +1,20 @@
 import { Component } from "react";
-import { withRouter } from "react-router";
+import { withRouter, Redirect } from "react-router";
 import data from '../../data/logements.json'
 import Galerie from "../../component/Galerie/Galerie";
 import DetailLogement from "../../component/DetailLogement";
 import Dropdown from "../../component/Dropdown";
 import './style.css'
+import { Switch } from "react-router-dom";
 
 class Fiche extends Component
 {
     constructor(props)
     {
         super(props)
-        this.state = {lgt : data[this.props.match.params.indexLogement]}
+        let indexLgt = +this.props.match.params.indexLogement
+        if(typeof indexLgt === 'number' && indexLgt >= 0 && indexLgt < data.length) this.state = {lgt : data[indexLgt]}
+        else this.state = { lgt: data[0] }
     }
 
     render()
@@ -20,7 +23,6 @@ class Fiche extends Component
         return <div className="fiche">
             <Galerie listUrl={this.state.lgt.pictures }/>
             <DetailLogement tagList={this.state.lgt.tags} rating={this.state.lgt.rating} host={this.state.lgt.host} title = {this.state.lgt.title} location = {this.state.lgt.location}>
-        
             </DetailLogement >
             <div className="fiche_dropdown_section">
                 <Dropdown key = "fiche_dropdown_1" titre="Description">

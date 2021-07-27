@@ -2,36 +2,36 @@
     position: relative
     margin: auto
     width: 100%
-    height: 415px
+    height: 255px
     border-radius: 25px
     overflow: hidden
     &_fleche
         &_gauche
             cursor: pointer
             position: absolute
-            left: 25px
+            left: 10px
             top: 50%
             transform: rotateZ(-90deg) translateX(50%)
             background-color: rgba(0,0,0,.1)
             padding: 5px
             border-radius: 5px
-            width: 48px
+            width: 18px
         &_droite
             cursor: pointer
             position: absolute
-            right: 25px
+            right: 10px
             top: 50%
             transform: rotateZ(90deg) translateX(-50%)
             background-color: rgba(0,0,0,.1)
             padding: 5px
             border-radius: 5px
-            width: 48px
+            width: 18px
     &_image
         width: 100%
         object-fit: cover
-        height: 415px
+        height: 255px
     &_count
-        font-size: 24px
+        font-size: 18px
         color: white
         position: absolute
         bottom: 10px
@@ -40,3 +40,18 @@
         background-color: rgba(0,0,0,.2 )
         border-radius: 10px
         padding: 5px 10px
+
+@media (min-width: 650px)
+    .galerie
+        height: 415px
+        &_fleche
+            &_gauche
+                left: 25px
+                width: 48px
+            &_droite
+                right: 25px
+                width: 48px
+        &_image
+            height: 415px
+        &_count
+            font-size: 24px

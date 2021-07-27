@@ -20,3 +20,15 @@
 
   <code>cd wastiauxwilliam_11_24-07-2021</code>
   <code>yarn start</code>
+
+
+  Breakpoint
+
+  $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
