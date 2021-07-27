@@ -1,9 +1,11 @@
 .hero {
-  margin: 0 100px 0 100px;
+  margin: 0 auto 0 auto;
   position: relative;
   overflow: hidden;
-  border-radius: 25px;
-  height: 223px;
+  border-radius: 10px;
+  height: 111px;
+  width: calc(100% - 40px);
+  max-width: 1240px;
 }
 
 .hero img {
@@ -11,7 +13,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .hero_text {
@@ -30,7 +32,36 @@
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-size: 48px;
+  font-size: 24px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 520px) {
+  .hero {
+    width: calc(100% - 100px);
+    border-radius: 25px;
+    height: 223px;
+  }
+  .hero img {
+    border-radius: 25px;
+  }
+  .hero_text {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    width: calc(100% - 200px);
+  }
+  .hero_text {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    width: calc(100%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
