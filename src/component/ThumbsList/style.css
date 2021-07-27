@@ -11,6 +11,8 @@ li {
   width: auto;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
