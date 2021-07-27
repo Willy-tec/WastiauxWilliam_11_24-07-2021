@@ -1,13 +1,14 @@
 .Thumbs {
-  width: 340px;
-  height: 340px;
+  width: calc(100vmin - 40px);
+  height: 255px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
 
 .Thumbs img {
-  height: calc(100%);
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -31,5 +32,18 @@
   width: calc(100% - 20px);
   padding: 10px;
   margin: 0;
+}
+
+@media (min-width: 520px) {
+  .Thumbs {
+    width: calc(100vmin - 100px);
+  }
+}
+
+@media (min-width: 850px) {
+  .Thumbs {
+    width: 340px;
+    height: 340px;
+  }
 }
 /*# sourceMappingURL=Thumbs.css.map */
