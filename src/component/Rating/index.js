@@ -7,7 +7,6 @@ class Rating extends Component
 {
     render()
     {
-        console.log("rating: " + this.props.rating)
         const range = [1, 2, 3, 4, 5];
         return (
         
