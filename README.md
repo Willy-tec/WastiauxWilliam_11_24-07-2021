@@ -2,6 +2,12 @@
 
 <p>Kasa vous recrute en tant que développeur Front-end en freelance pour développer leur nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.</p>
 
+<h2> Visite du site </h2>
+<p> Le site est hebergé par cloudflare, et son service de Worker via cette adresse :</P>
+<a href = "https://kasa.willytec.workers.dev"/>https://kasa.willytec.workers.dev/</a>
+<p>Pour information, le site est "build" via la commande react, puis transformer en service worker via wrangler.</p>
+
+
 <h2> Code pour executer le projet <h2>
   <code>yarn start </code>
     <p>Starts the development server.</p>
@@ -20,15 +26,3 @@
 
   <code>cd wastiauxwilliam_11_24-07-2021</code>
   <code>yarn start</code>
-
-
-  Breakpoint
-
-  $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-) !default;
