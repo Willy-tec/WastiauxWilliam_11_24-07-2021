@@ -6,12 +6,12 @@ class Host extends Component
 {
     render()
     {
-        console.log(this.props.host)
         return (
         
             <div className="host">
                 <img className="host_img" src={this.props.host.picture} alt={this.props.host.name}/>
-                <p>{this.props.host.name}</p>
+                <div className="host_name">{this.props.host.name.split(" ").map((el, index) => <p key={`hostname${ index }`}>{el}</p>)}
+                </div>
             </div>
     )}
 }
