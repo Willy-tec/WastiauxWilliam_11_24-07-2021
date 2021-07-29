@@ -14,7 +14,7 @@ import About from './page/About';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
     
       <Header></Header>
 
