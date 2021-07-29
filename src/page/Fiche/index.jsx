@@ -1,11 +1,10 @@
 import { Component } from "react";
-import { withRouter, Redirect } from "react-router";
+import { withRouter} from "react-router";
 import data from '../../data/logements.json'
 import Galerie from "../../component/Galerie/Galerie";
 import DetailLogement from "../../component/DetailLogement";
 import Dropdown from "../../component/Dropdown";
 import './style.css'
-import { Switch } from "react-router-dom";
 
 class Fiche extends Component
 {
