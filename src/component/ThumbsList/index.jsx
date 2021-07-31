@@ -17,7 +17,7 @@ class ThumbsList extends Component
     const { imgWidth } = this.state;
     return (
           <div className="Thumbs_list">
-            {data.map((el, index) => <Thumbs url={el.cover} index={index} key={index.toString()} name={el.title} alt={el.title} imgWidth={imgWidth}/>)}
+            {data && data.map((el, index) => <Thumbs url={el.cover} index={index} key={index.toString()} name={el.title} alt={el.title} imgWidth={imgWidth}/>)}
           </div>
     );
   }
