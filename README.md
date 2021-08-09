@@ -3,9 +3,9 @@
 <p>Kasa vous recrute en tant que développeur Front-end en freelance pour développer leur nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.</p>
 
 <h2> Visite du site </h2>
-<p> Le site est hebergé par cloudflare, et son service de Worker via cette adresse :</P>
+<p> Le site est hebergé par cloudflare</P>
 <a href = "https://wastiauxwilliam-11-24-07-2021.pages.dev"/>https://wastiauxwilliam-11-24-07-2021.pages.dev</a>
-<p>Pour information, le site est "build" via la commande react, puis transformer en service worker via wrangler.</p>
+
 
 
 <h2> Code pour executer le projet <h2>
