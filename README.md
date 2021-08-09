@@ -4,7 +4,7 @@
 
 <h2> Visite du site </h2>
 <p> Le site est hebergé par cloudflare, et son service de Worker via cette adresse :</P>
-<a href = "https://kasa.willytec.workers.dev"/>https://kasa.willytec.workers.dev/</a>
+<a href = "https://wastiauxwilliam-11-24-07-2021.pages.dev"/>https://wastiauxwilliam-11-24-07-2021.pages.dev</a>
 <p>Pour information, le site est "build" via la commande react, puis transformer en service worker via wrangler.</p>
 
 
